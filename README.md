@@ -1,12 +1,13 @@
 Bequem
 ===============
+![alt text](https://github.com/narenaryan/bequem/blob/develop/logo_bequem.png?raw=true)
 Bequem is a desktop application for german learners. It uses vocabulary and grammar 
 to generate flash-cards, and saves your progress.
 
 Requirements
 ============
-Node.js >= 12.16.1
-Electron Framework
+* Node.js >= 12.16.1
+* Electron Framework >= 9.0.2
 
 Setup
 =====
