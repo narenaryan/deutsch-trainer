@@ -1,6 +1,6 @@
-Deutsch Trainer
+Bequem
 ===============
-This is a desktop application for german learners. It uses vocabulary and grammar 
+Bequem is a desktop application for german learners. It uses vocabulary and grammar 
 to generate flash-cards, and saves your progress.
 
 Requirements
