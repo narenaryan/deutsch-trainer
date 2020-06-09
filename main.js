@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron')
-const electron = require('electron')
 
 function createWindow () {
   // Create the browser window.
@@ -12,7 +11,8 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadFile('index.html')
+  win.loadFile('./build/index.html')
+  win.webContents.openDevTools()
 
 }
 
@@ -38,5 +38,3 @@ app.on('activate', () => {
   }
 })
 
-
-require('electron-reload')(__dirname);
