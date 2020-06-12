@@ -28,6 +28,7 @@
     "electron": "^9.0.2",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-img": "^1.1.0",
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-postcss": "^3.1.2",
     "serve": "^10.1.1"
