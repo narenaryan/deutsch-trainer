@@ -1,6 +1,11 @@
 const plugins = [
-  '@babel/plugin-proposal-class-properties',
   ['@babel/proposal-decorators', { decoratorsBeforeExport: true } ],
+  "@babel/proposal-class-properties",
+  "@babel/proposal-object-rest-spread"
 ];
 
-module.exports = { plugins };
+const presets = [
+  "@babel/typescript"
+];
+
+module.exports = { plugins, presets };

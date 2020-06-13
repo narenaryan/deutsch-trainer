@@ -1,10 +1,11 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css, customElement} from 'lit-element';
 
 
 // Represents left navigation bar in the app
-class AppNavBar extends LitElement {
+@customElement('app-nav-bar')
+export class AppNavBar extends LitElement {
   // Define all component CSS here
-  static get styles(){
+  public static get styles(){
     return css`
       :host {
         display: block;
@@ -23,5 +24,3 @@ class AppNavBar extends LitElement {
     return html`<div></div>`
   }
 }
-
-customElements.define('app-nav-bar', AppNavBar);

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bequem</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src * 'self' 'unsafe-inline';" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+    <!-- Main container -->
+    <div class="columns">
+      <div class="column is-one-fifth">
+        <app-nav-bar></app-nav-bar>
+      </div>
+      <div class="column">
+        <home-page></home-page>
+      </div>
+    </div>    
+    </main>
+  </body>
+</html>
