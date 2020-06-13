@@ -1,4 +1,4 @@
-import {LitElement, html} from 'lit-element';
+import {LitElement, html, customElement} from 'lit-element';
 import artist from '../images/artist.png';
 import bird from '../images/bird.png';
 
@@ -41,6 +41,7 @@ const perClassStyle = html`
   </style>`
 
 // We are using Google Litelements as we can port them to any framework later
+@customElement('home-page')
 class Home extends LitElement {
 
   render() {
@@ -74,7 +75,7 @@ class Home extends LitElement {
     `;
   }
 
-  // Without this Bulma styles cannot be used in component
+  // Without this, Bulma styles cannot be used in component
   // i.e Shadow DOM cannot apply outer CSS styles
   // https://lit-element.polymer-project.org/guide/templates#renderroot
   createRenderRoot() {
@@ -82,5 +83,3 @@ class Home extends LitElement {
   }
 }
 
-// This line defines a custom web component to use in index.html
-customElements.define('home-page', Home)
