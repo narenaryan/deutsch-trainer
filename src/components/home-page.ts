@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html} from 'lit-element';
 import artist from '../images/artist.png';
 import bird from '../images/bird.png';
 
@@ -59,12 +59,12 @@ class Home extends LitElement {
             <div class="columns">
               <div class="column">
                 <figure class="image is-64x64">
-                  <img src="./images/artist.png" />
+                  <img src="${artist}" />
                 </figure>
               </div>
               <div class="column">
                 <figure class="image is-64x64">
-                  <img src="./images/bird.png" />
+                  <img src="${bird}" />
                 </figure>
               </div>
             </div>
