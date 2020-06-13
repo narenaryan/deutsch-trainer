@@ -1,3 +1,5 @@
+// https://github.com/microsoft/TypeScript-Babel-Starter
+
 var path = require('path');
 
 module.exports = {
