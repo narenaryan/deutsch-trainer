@@ -29,13 +29,11 @@
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-img": "^1.1.0",
-    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^3.1.2",
-    "serve": "^10.1.1"
+    "serve": "^11.3.2"
   },
   "dependencies": {
-    "@rollup/plugin-babel": "^5.0.3",
-    "@rollup/plugin-node-resolve": "^8.0.1",
     "lit-element": "^2.3.1"
   }
 }
