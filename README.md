@@ -8,7 +8,7 @@ to generate flash-cards, and saves your progress.
 Requirements
 ============
 * Node.js >= 12.16.1
-* Electron Framework >= 9.0.2
+* npm >= 6.13.4
 
 Setup
 =====
