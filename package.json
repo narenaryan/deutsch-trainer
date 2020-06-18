@@ -7,20 +7,22 @@
     "start": "electron .",
     "copyindex": "cp index.html dist",
     "copywc": "cp -r node_modules/@webcomponents/webcomponentsjs/bundles dist && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js dist",
-    "build": "rm -rf dist && mkdir dist && npm run copyindex && npm run copywc && webpack",
+    "build": "run-script-os",
+    "build:win32": "del /f/q \\dist && mkdir dist && npm run copyindex && npm run copywc && webpack",
+    "build:darwin:linux": "rm -rf dist && mkdir dist && npm run copyindex && npm run copywc && webpack",
     "check-types": "tsc",
     "launch": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wingmingchan/german.git"
+    "url": "git+https://github.com/narenaryan/bequem"
   },
   "author": "Naren Y",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wingmingchan/german/issues"
+    "url": "https://github.com/narenaryan/bequem/issues"
   },
-  "homepage": "https://github.com/wingmingchan/german#readme",
+  "homepage": "https://github.com/narenaryan/bequem#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
@@ -33,6 +35,7 @@
     "css-loader": "^3.6.0",
     "electron": "^9.0.2",
     "file-loader": "^6.0.0",
+    "run-script-os": "^1.1.1",
     "style-loader": "^1.2.1",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5",
