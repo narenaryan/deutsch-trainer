@@ -41,8 +41,18 @@ const perClassStyle = html`
   </style>`
 
 // We are using Google Litelements as we can port them to any framework later
-@customElement('home-page')
-class Home extends LitElement {
+@customElement('launch-screen')
+class LaunchScreen extends LitElement {
+
+  // Tell parent component that launch phase is over
+  disableLaunchScreen(){
+    let event = new CustomEvent('app-started', {
+      detail: {
+        message: 'App started to proceed'
+      }
+    });
+    this.dispatchEvent(event);
+  }
 
   render() {
     return html`
@@ -52,7 +62,7 @@ class Home extends LitElement {
           <div class="rows">
             <h1 class="row center-row row-padding is-full is-large"> Deutsch Trainer</h1>
             <p class="row row-padding is-full"> Start Learning German with the help of flash cards and daily excercises. </p>
-            <button class="row row-padding button is-rounded start-button"><span class="button-text">Start</span></button>
+            <button @click="${this.disableLaunchScreen}" class="row row-padding button is-rounded start-button"><span class="button-text">Start</span></button>
           </div>
         </div>
         <div class="column">
