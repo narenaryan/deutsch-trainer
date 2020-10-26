@@ -37,7 +37,7 @@
     "file-loader": "^6.0.0",
     "run-script-os": "^1.1.1",
     "style-loader": "^1.2.1",
-    "tslib": "^2.0.0",
+    "tslib": "^2.0.3",
     "typescript": "^3.9.5",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
